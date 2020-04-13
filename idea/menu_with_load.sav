@@ -1,0 +1,3 @@
+button CONTINUE 32 32 0 2 608 64 load_game
+button NEW_GAME 32 128 0 1 608 64 add_menu_newgame
+button OPTIONS 32 224 0 0 608 64 add_menu_other

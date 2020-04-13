@@ -1,0 +1,182 @@
+atlantis images/atlantis6.png
+atlantis images/atlantis5.png
+atlantis images/atlantis4.png
+atlantis images/atlantis3.png
+atlantis images/atlantis2.png
+atlantis images/atlantis1.png
+atlantis images/atlantis0.png
+crab images/crabout01.bmp 255 255 255 128
+crab images/crabout02.bmp 255 255 255 128
+crab images/crabout03.bmp 255 255 255 128
+crab images/crabout04.bmp 255 255 255 128
+crab images/crabout05.bmp 255 255 255 128
+crab images/crabout06.bmp 255 255 255 128
+crab images/crabout07.bmp 255 255 255 128
+crab images/crabout08.bmp 255 255 255 128
+crab images/crabout09.bmp 255 255 255 128
+crab images/crabout10.bmp 255 255 255 128
+crab images/crabout11.bmp 255 255 255 128
+crab images/crabout11.bmp 255 255 255 128
+grass images/grass.png 255 255 255 0
+doorup images/doorbackupper.png
+doordown images/doorbackgroundlower.png
+octo images/s1.bmp 255 255 255 0
+octo images/s2.bmp 255 255 255 0
+octo images/s3.bmp 255 255 255 0
+octo images/s4.bmp 255 255 255 0
+octo images/s5.bmp 255 255 255 0
+obstacle images/rock.bmp
+quake images/quake1.bmp 255 255 255 0
+quake images/quake2.bmp 255 255 255 0
+quake images/quake3.bmp 255 255 255 0
+quake images/quake4.bmp 255 255 255 0
+quake images/quake5.bmp 255 255 255 0
+quake images/quake6.bmp 255 255 255 0
+lightgrass images/lightgrass.png
+tallgrass images/tallgrass.png
+tallgrass images/tallgrassoverlay.png
+background_default images/none.bmp
+HIGHnew images/newgame_highlighted.bmp
+UNHIGHnew images/newgame_unhighlighted.png
+HIGHopt images/option_highlighted_true.bmp
+UNHIGHopt images/option_unhighlighted.png
+HIGHload images/continue_highlighted.png
+UNHIGHload images/continue_unhighlighted.png
+background_menu images/menubackground.png
+HIGHo images/crabout11.bmp
+UNHIGHo images/lava.bmp
+HIGHba images/back_highlighted.png
+UNHIGHba images/back_unhighlighted.png
+HIGHbo images/boy_highlighted.png
+UNHIGHbo images/boy_unhighlighted.png
+HIGHg images/girl_highlighted.png
+UNHIGHg images/girl_unhighlighted.png
+HIGHza images/zigzagoonAppeared.png
+UNHIGHza images/zigzagoonAppeared.png
+Zigzagoon_back images/zigzagoon_back.png
+Zigzagoon_front images/zigzagoon_front.png
+Squirtle_back images/squirtle_back.png
+Squirtle_front images/squirtle_front.jpg
+Cinderpillar_back images/cinderpillar_back.png
+Cinderpillar_front images/cinderpillar_front.png
+battlebackk images/unnamed.png
+black images/black.png
+player images/playerfncopy.png
+player images/ashfacingupsteppingleft.png
+player images/playerfncopy.png
+player images/ashfacingupsteppingright.png
+player images/ashfacingdown.png
+player images/ashfacingdownsteppingleft.png
+player images/ashfacingdown.png
+player images/ashfacingdownsteppingright.png
+player images/ashfacingleft.png
+player images/ashfacingleftsteppingleft.png
+player images/ashfacingleft.png
+player images/ashfacingleftstepright.png
+player images/ashfacingright.png
+player images/ashfacingrightsteppingleft.png
+player images/ashfacingright.png
+player images/ashfacingrightsteppingright.png
+
+roshi images/roshifacingup.png
+roshi images/roshifacingupsteppingleft.png
+roshi images/roshifacingup.png
+roshi images/roshifacingupsteppingright.png
+roshi images/roshifacingdown.png
+roshi images/roshifacingdownsteppingleft.png
+roshi images/roshifacingdown.png
+roshi images/roshifacingdownsteppingright.png
+roshi images/roshifacingleft.png
+roshi images/roshifacingleftsteppingleft.png
+roshi images/roshifacingleft.png
+roshi images/roshifacingleftsteppingright.png
+roshi images/roshifacingright.png
+roshi images/roshifacingrightsteppingleft.png
+roshi images/roshifacingright.png
+roshi images/roshifacingrightsteppingright.png
+
+mom images/momfacingup.png
+mom images/momfacingupsteppingleft.png
+mom images/momfacingup.png
+mom images/momfacingupsteppingright.png
+mom images/momfacingdown.png
+mom images/momfacingdownsteppingleft.png
+mom images/momfacingdown.png
+mom images/momfacingdownsteppingright.png
+mom images/momfacingleft.png
+mom images/momfacingleftsteppingleft.png
+mom images/momfacingleft.png
+mom images/momfacingleftsteppingright.png
+mom images/momfacingright.png
+mom images/momfacingrightsteppingleft.png
+mom images/momfacingright.png
+mom images/momfacingrightsteppingright.png
+
+ledge images/ledge.png
+woodfloor images/woodfloor.png
+clear images/clear.png
+
+Scratch images/quake1.bmp 255 255 255 0
+Scratch images/quake2.bmp 255 255 255 0
+Scratch images/quake3.bmp 255 255 255 0
+Scratch images/quake4.bmp 255 255 255 0
+Scratch images/quake5.bmp 255 255 255 0
+Scratch images/quake6.bmp 255 255 255 0
+Scratch images/clear.png
+Tackle images/tackle1.png 255 255 255 0
+Tackle images/tackle2.png 255 255 255 0
+Tackle images/tackle3.png 255 255 255 0
+Tackle images/clear.png
+WaterGun images/watergun1.png 255 255 255 0
+WaterGun images/watergun2.png 255 255 255 0
+WaterGun images/watergun3.png 255 255 255 0
+WaterGun images/watergun4.png 255 255 255 0
+WaterGun images/watergun5.png 255 255 255 0
+WaterGun images/watergun6.png 255 255 255 0
+Ember images/ember1.png 255 255 255 0
+Ember images/ember2.png 255 255 255 0
+Ember images/ember3.png 255 255 255 0
+Ember images/ember4.png 255 255 255 0
+Ember images/ember5.png 255 255 255 0
+Ember images/ember6.png 255 255 255 0
+Ember images/ember7.png 255 255 255 0
+Ember images/ember8.png 255 255 255 0
+Ember images/ember9.png 255 255 255 0
+Ember images/ember10.png 255 255 255 0
+Ember images/ember11.png 255 255 255 0
+Ember images/ember12.png 255 255 255 0
+Ember images/ember13.png 255 255 255 0
+Ember images/clear.png
+
+~~~polyentityimages~~~
+tree1 images/tree1tl.png
+tree2 images/tree1tr.png
+tree3 images/tree1bl.png
+tree4 images/tree1br.png
+
+houseA1 images/house6.png
+houseA2 images/house7.png
+houseA3 images/house8.png
+houseA4 images/house9.png
+houseA5 images/house10.png
+houseA6 images/house1.png
+houseA7 images/house2.png
+houseA8 images/house3.png
+houseA9 images/house4.png
+houseA10 images/house5.png
+
+houseB11 images/HouseB1copy.png
+houseB12 images/HouseB2copy.png
+houseB13 images/HouseB3copy.png
+houseB14 images/HouseB4copy.png
+houseB15 images/HouseB5copy.png
+houseB6 images/HouseB6copy.png
+houseB7 images/HouseB7copy.png
+houseB8 images/HouseB8copy.png
+houseB9 images/HouseB9copy.png
+houseB10 images/HouseB10copy.png
+houseB1 images/HouseB11copy.png
+houseB2 images/HouseB12copy.png
+houseB3 images/HouseB12copy.png
+houseB4 images/HouseB12copy.png
+houseB5 images/HouseB15copy.png

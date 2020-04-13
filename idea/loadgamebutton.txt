@@ -1,0 +1,2 @@
+UNHIGH seaGrass_7_11 0 0 0 UNHIGHload
+HIGH obst_7_11 0 0 0 HIGHload

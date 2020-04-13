@@ -1,0 +1,10 @@
+menu 0 0 672 448 idea/menu.sav 2 1 0 1 donothing
+other 0 0 672 448 idea/other.sav 2 2 0 0 exit
+newgame 0 0 672 448 idea/newgame_menu.sav 3 1 0 2 exit
+battle 0 0 672 448 idea/battle.sav 2 1 0 1 exit
+menu_with_load 0 0 672 448 idea/menu_with_load.sav 3 1 0 2 donothing
+
+//dialogues
+dialogue1 0 340 672 108 idea/dialogue1.sav 1 1 0 0 Switch_to_dialogue2
+dialogue2 0 340 672 108 idea/dialogue2.sav 1 1 0 0 exit
+dialogue3 0 340 672 108 idea/dialogue3.sav 1 1 0 0 exit

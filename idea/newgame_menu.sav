@@ -1,0 +1,3 @@
+button BOY 32 32 0 2 608 64 boy
+button GIRL 32 128 0 1 608 64 exit
+button BACK 32 224 0 0 608 64 exit

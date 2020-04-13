@@ -1,0 +1,2 @@
+button NEW_GAME 32 32 0 1 608 64 add_menu_newgame
+button OPTIONS 32 128 0 0 608 64 add_menu_other

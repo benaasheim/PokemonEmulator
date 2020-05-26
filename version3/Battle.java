@@ -17,7 +17,7 @@ public abstract class Battle extends World{
     private Trainer playerTrainer;
     private Trainer foeTrainer;
     private Pokemon playerPokemon;
-    private Pokemon foePokemon;
+    protected Pokemon foePokemon;
     private Pokemon fasterPokemon;
     private Pokemon slowerPokemon;
     private String fasterAttack;
@@ -25,12 +25,12 @@ public abstract class Battle extends World{
     private Quake fasterQuake;
     private Quake slowerQuake;
     public String a, b, c, d, e, f, g, h;
-    private int Stage;
+    protected int Stage;
     private Obstacle playerPAnchor;
-    private Obstacle foePAnchor;
+    protected Obstacle foePAnchor;
     private String playerNameIfFainted;
     private String playerLevelIfFainted;
-    private String foeNameIfFainted;
+    protected String foeNameIfFainted;
     private String foeLevelIfFainted;
 
 
@@ -91,7 +91,7 @@ public abstract class Battle extends World{
         foeLevelIfFainted = ""+ foePokemon.getLVL();
     }
 
-    private Menu standardAnnouncementMenu(String buttonFunc, String buttonLabel) {
+    protected Menu standardAnnouncementMenu(String buttonFunc, String buttonLabel) {
         Menu menu = new Menu(new Point(0, 340), 672, 108, 1, 1, new Cursor(), buttonFunc);
         Button button = new Button(new Point(0, 340), 672, 108, buttonFunc, new Point(0, 0), buttonLabel);
         menu.addButton(button);
@@ -102,6 +102,12 @@ public abstract class Battle extends World{
     public Menu AnnounceFoe() {
         Stage = 0;
         return standardAnnouncementMenu("AnnouncePlayer", openingMessage(foeTrainer, foePokemon));
+    }
+    public Menu AnnounceFoe2() {
+        foePAnchor = Obstacle.createObstacle("foeanchor", FOEPOKEAnchor, imageStore.getImageList(foePokemon.getName()+"_front"));
+        addEntity(foePAnchor);
+        Stage = 0;
+        return standardAnnouncementMenu("ChooseMoveStage", openingMessage(foeTrainer, foePokemon));
     }
     public Menu AnnouncePlayer() {
         Stage = 1;
@@ -218,10 +224,8 @@ public abstract class Battle extends World{
         }
         else if (foePokemon.getHP() <= 0) {
             foePokemon = getFoeNext();
-            if (foePokemon == null) {
-                Stage = 122;
-                functionkey = "FoeFainted";
-            }
+            functionkey = "FoeFainted";
+            Stage = 122;
         }
         if (Stage == 10) {
             functionkey = "ChooseMoveStage";
@@ -241,11 +245,7 @@ public abstract class Battle extends World{
         Stage = 666;
         return standardAnnouncementMenu("ReturnALoser", "You Fainted!");
     }
-    public Menu FoePokeFainted() {
-        removeEntity(foePAnchor);
-        Stage = 123;
-        return standardAnnouncementMenu("ReturnAWinner", foeNameIfFainted + " fainted!");
-    }
+
     public Menu b3(String string) {
         if (!string.equals(" ") && playerPokemon.stillPP(string)) {
             return Attackk(string);
@@ -254,6 +254,7 @@ public abstract class Battle extends World{
             return chooseMoveStage();
         }
     }
+
     protected abstract Pokemon getPlayerPokemonStart();
     protected abstract Pokemon getFoePokemonStart();
     protected abstract String openingMessage(Trainer trainer, Pokemon pokemon);
@@ -263,4 +264,5 @@ public abstract class Battle extends World{
     protected abstract Trainer getFoeTrainer();
     protected abstract Pokemon getFoeNext();
     protected abstract String getFoeAttack();
+    protected abstract Menu FoePokeFainted();
 }

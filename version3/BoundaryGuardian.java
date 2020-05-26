@@ -20,7 +20,7 @@ public class BoundaryGuardian extends Person {
     //Instance Variables
     private PathingStrategy strategy;
     private List<Point> boundary;
-    private boolean walkingback;
+    protected boolean walkingback;
     private Point originalposition;
     private String dialogue;
 
@@ -92,7 +92,6 @@ public class BoundaryGuardian extends Person {
     public void Speak() {
         VirtualWorld.nextMenu = dialogue;
         VirtualWorld.gameState.addProgress(getId());
-        VirtualWorld.gameState.getTrainer().addPokemon(Pokemon.newCinderpiller());
     }
     public void scheduleActions(World world, EventScheduler scheduler) {
         activitypart(scheduler, world);
@@ -156,9 +155,7 @@ public class BoundaryGuardian extends Person {
     }
     public void task(Point point, World world, EventScheduler scheduler) {
         if (!walkingback) {
-            FlipPlayer(point, world);
-            VirtualWorld.lastLoc = world.getPlayer().getPosition();
-            Speak();
+            perfom_task(point, world, scheduler);
         }
         else {
             world.moveEntity(this, point);
@@ -197,5 +194,10 @@ public class BoundaryGuardian extends Person {
         }
         path.addAll(points);
         return true;
+    }
+    public void perfom_task(Point point, World world, EventScheduler scheduler) {
+        FlipPlayer(point, world);
+        world.getPlayer().saveLast();
+        Speak();
     }
 }

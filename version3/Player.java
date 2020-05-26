@@ -22,7 +22,6 @@ final class Player extends Person {
         this.input = true;
     }
     public static boolean parse(String [] properties, ImageStore imageStore, World world) {
-        System.out.println("HERE!");
         if (NUM_PROPERTIES == properties.length)
         {
 

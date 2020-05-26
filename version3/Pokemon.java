@@ -185,7 +185,6 @@ public class Pokemon {
     public static Pokemon newSquirtle() {
         Pokemon pokemon = new Pokemon("Squirtle", 5, 44, 48, 65, 65, 50, 64, Type.WATER, null);
         pokemon.addAttack(Attack.attackFromName("WaterGun"));
-        pokemon.addAttack(Attack.attackFromName("Scratch"));
         return pokemon;
     }
     public static Pokemon newZigzagoon() {

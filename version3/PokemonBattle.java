@@ -49,4 +49,10 @@ public class PokemonBattle extends Battle{
         String string = "Wild " + pokemon.getName() + " fainted!";
         return string;
     }
+
+    protected Menu FoePokeFainted() {
+        removeEntity(foePAnchor);
+        Stage = 123;
+        return standardAnnouncementMenu("ReturnAWinner", foeNameIfFainted + " fainted!");
+    }
 }

@@ -51,4 +51,6 @@ class Obstacle extends Entity {
 
         return properties.length == NUM_PROPERTIES;
     }
+
+
 }

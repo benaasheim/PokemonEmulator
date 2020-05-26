@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class MenuStore extends ModStore{
-    public static final String FileName = ".idea/MenuStore";
+    public static final String FileName = "idea/MenuStore";
     public static final int NUM_PROPERTIES = 11;
     public MenuStore (){
         super();

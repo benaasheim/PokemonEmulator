@@ -11,7 +11,7 @@ public interface Loadable {
         {
             System.out.println("LOADING " + loadable.getClass() + " USING " + filename);
             Scanner in = new Scanner(new File(filename));
-            load(loadable, in, imageStore);
+            load(loadable, in, imageStore, filename);
         }
         catch (FileNotFoundException e)
         {
@@ -20,7 +20,7 @@ public interface Loadable {
         }
     }
 
-    static void load(Loadable loadable, Scanner in, ImageStore imageStore) {
+    static void load(Loadable loadable, Scanner in, ImageStore imageStore, String filename) {
         int lineNumber = 0;
         while (in.hasNextLine())
         {

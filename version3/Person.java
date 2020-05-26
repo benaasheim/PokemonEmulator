@@ -60,6 +60,7 @@ public abstract class Person extends ActiveEntity{
         this.setImages(imageList);
     }
     public void turn_to(Point point) {
+
         if (getPosition().adjacent(point)) {
             char dd = getPosition().fromdir(point);
             turn(dd);

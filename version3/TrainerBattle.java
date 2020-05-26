@@ -12,18 +12,18 @@ public class TrainerBattle extends Battle {
     protected Trainer getPlayerTrainer() {
         return player;
     }
-    protected Trainer getFoeTrainer() { return null; }
+    protected Trainer getFoeTrainer() { return foe; }
     protected Pokemon getFoePokemonStart() {
         return foe.getDefaultPokemon();
     }
     protected Pokemon getFoeNext() {
-        return null;
+        return foe.getNextPokemon();
     }
 
 
     @Override
     protected String getFoeAttack() {
-        for (Attack attack : foe.getDefaultPokemon().getAttacks()) {
+        for (Attack attack : foePokemon.getAttacks()) {
             if (attack.getPp() > 0) {
                 return attack.getName();
             }
@@ -37,7 +37,7 @@ public class TrainerBattle extends Battle {
     }
 
     protected String openingMessage(Trainer trainer, Pokemon pokemon) {
-        String string = "Wild " + pokemon.getName() + " appeared!";
+        String string = trainer.getName() + " sent out " + pokemon.getName() + "!";
         return string;
     }
 
@@ -48,8 +48,20 @@ public class TrainerBattle extends Battle {
 
     @Override
     protected String foeFaintedMessage(Trainer trainer, Pokemon pokemon) {
-        String string = "Wild " + pokemon.getName() + " fainted!";
+        String string = pokemon.getName() + " fainted!";
         return string;
     }
 
+    protected Menu FoePokeFainted() {
+        System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%");
+        removeEntity(foePAnchor);
+        if (foePokemon != null) {
+            Stage = 0;
+            return standardAnnouncementMenu("AnnounceFoe", foeNameIfFainted + " fainted!");
+        }
+        else {
+            Stage = 123;
+            return standardAnnouncementMenu("ReturnAWinner", foeNameIfFainted + " fainted!");
+        }
+    }
 }

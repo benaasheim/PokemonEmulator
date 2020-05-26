@@ -1,5 +1,5 @@
 public class Options implements Loadable{
-    public static final String FileName = ".idea/Preferences";
+    public static final String FileName = "idea/Preferences";
     public int UP, DOWN, LEFT, RIGHT, START, SAVE, HEAL, ABUTTON, BBUTTON;
     public Options() {
         this.UP = 38;

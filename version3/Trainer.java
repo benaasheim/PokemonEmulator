@@ -6,11 +6,13 @@ public class Trainer {
     //Instance Variables
     private String name;
     private List<Pokemon> roster;
+    private int current_pokemon;
 
     //Class Methods
     public Trainer(String name) {
         this.name = name;
         this.roster = new ArrayList<>();
+        current_pokemon = 0;
     }
 
     //Accessors
@@ -21,7 +23,12 @@ public class Trainer {
         return roster;
     }
     public Pokemon getDefaultPokemon() {
+        System.out.println(current_pokemon);
         return getPokemon(0);
+    }
+    public Pokemon getNextPokemon() {
+        current_pokemon++;
+        return getPokemon(current_pokemon);
     }
     public Pokemon getPokemon(int i) {
         return roster.get(i);

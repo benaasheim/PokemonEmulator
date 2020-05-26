@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class GameState implements Loadable {
-    public static final String FileName = ".idea/GameState";
+    public static final String FileName = "idea/GameState";
     private static final String POKEMON_KEY = "POKEMON";
     private static final String DEFEATED_KEY = "DEF";
     private static final String BADGE_KEY = "BDG";
@@ -71,20 +71,9 @@ public class GameState implements Loadable {
                 switch (properties[Functions.PROPERTY_KEY]) {
                     case NAME_KEY: trainer.setName(properties[1]);return true;
                     case POKEMON_KEY:
-                        List<String> list = Arrays.asList(properties);
-                        List<String> n = list.subList(1, list.size());
-                        var lambdaContext = new Object() {
-                            String string = "";
-                        };
-                        n.stream().forEach(s -> lambdaContext.string += s + " ");
-                        properties = lambdaContext.string.split("\\s");
-                        int counter = 0;
-                        for (String sss : properties) {
-//                        System.out.println("properties["+counter+"] "+sss);
-                            counter++;
-                        }
+                        properties = Arrays.copyOfRange(properties, 1, properties.length);
+                        System.out.println(Arrays.toString(properties));
                         Pokemon pokemon = Pokemon.fromString(properties);
-//                    System.out.println("ADDING" + pokemon.getName());
                         trainer.addPokemon(pokemon);
                         return true;
                     case DEFEATED_KEY: addDefeated(properties[1]);return true;
@@ -115,6 +104,7 @@ public class GameState implements Loadable {
         lines.add(LASTHEALWORLD_KEY + " " + VirtualWorld.lastHealWorld);
         WritetoNew(lines);
     }
+
     private static void WritetoNew(List<String> lines)  {
         try {
             Path file = Paths.get(FileName);

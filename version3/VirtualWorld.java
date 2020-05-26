@@ -35,7 +35,7 @@ public final class VirtualWorld extends PApplet {
     public static final int WORLD_COLS = VIEW_COLS * WORLD_WIDTH_SCALE;
     public static final int WORLD_ROWS = VIEW_ROWS * WORLD_HEIGHT_SCALE;
 
-    public static String IMAGE_LIST_FILE_NAME = ".idea/imagelist";
+    public static String IMAGE_LIST_FILE_NAME = "idea/imagelist";
 
     private ImageStore imageStore;
     private World world;
@@ -165,6 +165,7 @@ public final class VirtualWorld extends PApplet {
             case "Attacks": addMenu(battle.Atti()); break;
             case "AnnounceAttack": addMenu(battle.AnAt());break;
             case "FoeFainted": addMenu(battle.FoePokeFainted());break;
+            case "AnnounceFoe": menus.clear(); addMenu(battle.AnnounceFoe2());break;
             case "PlayerPokeFainted": menus.clear(); addMenu(battle.PlayerPokeFainted());break;
             case "NoMorePokemon": menus.clear(); addMenu(battle.noMoPoke());break;
             case "PlayerFainted": menus.clear(); addMenu(battle.PlayerFainted());break;
@@ -183,9 +184,9 @@ public final class VirtualWorld extends PApplet {
                 else if (functionkey.length() >= 2 && functionkey.substring(0, 2).equals("b3")) {
                     addMenu(battle.b3(functionkey.substring(2)));
                 }
-                else {
-                    System.out.println("SUMPN WRONG HERE, invalid buttonkey: " + functionkey);
-                }
+//                else {
+//                    System.out.println("SUMPN WRONG HERE, invalid buttonkey: " + functionkey);
+//                }
                 break;
         }
     }
@@ -238,7 +239,6 @@ public final class VirtualWorld extends PApplet {
     public void keyPressed() {
         if (key != CODED)
         {
-            System.out.println(keyCode);
             executeButtonPush(controller.executeCommandSpec(options.codeToCommand(keyCode)));
         }
     }

@@ -46,6 +46,7 @@ public class World implements Loadable{
                     case House.KEYA: case House.KEYB: return House.parse(properties, imageStore, this);
                     case BasicTalker.KEY: return BasicTalker.parse(properties, imageStore, this);
                     case Player.KEY: return Player.parse(properties, imageStore, this);
+                    case Battler.KEY: return Battler.parse(properties, imageStore, this);
                 }
             }
             return false;

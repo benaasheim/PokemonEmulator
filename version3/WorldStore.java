@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class WorldStore extends ModStore{
-    public static final String FileName = ".idea/WorldStore";
+    public static final String FileName = "idea/WorldStore";
     public static final int NUM_PROPERTIES = 4;
 
     public WorldStore(){
